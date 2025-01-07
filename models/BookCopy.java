@@ -1,33 +1,16 @@
 package models;
 
-import java.util.List;
-
 public class BookCopy {
     private final String id;
-    private final String name;
-    private final List<String> authors;
-    private final String publisher;
+    private final BookDetails bookDetails;
 
-    public BookCopy(String id, String name, List<String> authors, String publisher) {
+    public BookCopy(String id, BookDetails bookDetails) {
         this.id = id;
-        this.name = name;
-        this.authors = authors;
-        this.publisher = publisher;
+        this.bookDetails = bookDetails;
     }
 
     public String getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public List<String> getAuthors() {
-        return authors;
-    }
-
-    public String getPublisher() {
-        return publisher;
-    }
 }
